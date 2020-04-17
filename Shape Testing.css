@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(20, 20, 20);
+    margin: 0vw;
+    padding: 0vw;
+    border: 0vw;
+}
+
+.square {
+    width: 20vw;
+    height: 20vw;
+    margin: 10vw 0vw 0vw 35vw;
+    padding: 0vw;
+    border-top: 5vw solid rgb(190,190,190);
+    border-left: 5vw solid rgb(200,200,200);
+    border-bottom: 5vw solid rgb(190,190,190);
+    border-right: 5vw solid rgb(200,200,200);
+    background-color: white;
+    display: inline-block;
+    background-clip: padding-box;
+    position: absolute;
+    text-align: center;
+}
+
+.container:hover > .top {
+    /* margin: 20vh 0vw 0vw 5vw; */
+    width: 2vw;
+    height: 33vw;
+    margin: 8.5vw 0vw 0vw 35vw;
+    background-color: rgb(220,220,220);
+}
+
+.container:hover > .top > .phraseTwo {
+    font-size: 0vw;
+}
+
+.top {
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    width: 30vw;
+    height: 30vw;
+    margin: 10vw 0vw 0vw 35vw;
+    padding: 0vw;
+    transition: width ease 600ms,height ease 600ms,margin ease 600ms,background-color ease 200ms;
+    text-align: center;
+}
+
+.phrase {
+    font-size: 2vw;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    margin-top: 8vw;
+}
+
+.phraseTwo {
+    font-size: 2vw;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    margin-top: 30vh;
+    transition: all ease 600ms;
+}
